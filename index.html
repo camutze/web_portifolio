@@ -1,43 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Aprendendo Web para fazer meu site!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CAMUTZE</title>
 </head>
 
+<style>
+    body {
+        margin: 0;
+    }
+
+    #topMenu {
+        display: flex;
+        background-color: #333;
+        margin: 0;
+    }
+
+    #topMenu li {
+        color: white;
+        text-decoration: none;
+        padding: 14px 16px;
+        display: block;
+    }
+
+    #topMenu li:first-child {
+        margin-right: auto;
+    }
+
+    .section1 {
+        display: flex;
+        height: 33vh;
+        background-color: rgba(0, 255, 234, 0.598)
+    }
+
+    .section2 {
+        display: flex;
+        height: 33vh;
+        background-color: white;
+    }
+
+    .section3 {
+        display: flex;
+        height: 33vh;
+        background-color: #e5e6ea;
+    }
+
+    .botaoVermelho {
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        font-family: 'Fajalla One', sans-serif;
+    }
+
+    .centralizar {
+        margin: auto;
+        text-align: center;
+    }
+</style>
+
 <body>
-    <h1> Aqui é o trem h1</h1>
-    <h2> Aqui é o trem h2</h2>
-    <h3> Aqui é o trem h3</h3>
-    <h4> Aqui é o trem h4</h4>
-    <h5> Aqui é o trem h5</h5>
-    <p><b> aqui é a tag b </b><strong>aqui é a tag strong</strong>, aqui é a tag p aqui é a tag p, aqui é a tag p
-        <i> é a tag i</i> é a tag p aqui é a tag p, aqui é a tag p
-        aqui é a tag p, é a tag aqui é a tag p, aqui é a tag p
-        aqui é a tag p, aqui é a tag p aqui é a tag p, aqui é a tag p
-        aqui é a tag p, aqui é a tag p aqui é a tag p, aqui é a tag p
-    </p>
+    <nav>
+        <ul id="topMenu">
+            <li>Logo</li>
+            <li>Home</li>
+            <li>Projetos</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <div class="section1">
+        <div class="centralizar">Projetos</div>
+    </div>
+    
+    <div id = "projetos" class="centralizar" >
+        <table>
+            <tr>
+                <td>IMAGEM DO PROJETO</td>
+                <td>DESCRIÇÃO DO PROJETO</td>
 
-    <a href="https://github.com/camutze/">Meu GIT SEUS PUTO</a>
-    <a href="/sobre.html"> Sobre </a>
-    <form>
-        <input>
-        <!--
-        <label> </label>
-        <select> </select>
-        <option> </option>
-        <textarea> </textarea>
-        <button> </button>
-        -->
-        <label>Nome:</label>
-        <input type="text" placeholder="Nome" required>
-        <label>Email:</label>
-        <input type="text" placeholder="Email" required>
-        <input type="password" placeholder="Senha" required>
+            </tr>
+        </table>
 
-
-    </form>
-    <small> Pequeno texto </small>
-
+    </div>
 </body>
 
 </html>
